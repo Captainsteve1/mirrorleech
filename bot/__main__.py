@@ -96,12 +96,12 @@ def getHerokuDetails(h_api_key, h_app_name):
             abc += f"<b>├ 🎃 APP USAGE:</b> {get_readable_time(AppQuotaUsed)}\n"
             abc += f"<b>├ 🗑️ OTHER APP:</b> {get_readable_time(OtherAppsUsage)}\n"
             abc += f'<b>│</b>\n'
-            abc += f'<b>╰─《 ☣️ @ASIMIRROR  ☣️ 》</b>'
+            abc += f'<b>╰─《 ☣️ @TEIMirrorandLeechGroup  ☣️ 》</b>'
         else:
             abc += f"<b>├ APP USAGE:</b> {get_readable_time(AppQuotaUsed)}\n"
             abc += f"<b>├ OTHER APP:</b> {get_readable_time(OtherAppsUsage)}\n"
             abc += f'<b>│</b>\n'
-            abc += f'<b>╰─《 @ASIMIRROR  》</b>'
+            abc += f'<b>╰─《 @TEIMirrorandLeechGroup  》</b>'
         return abc
     except Exception as g:
         LOGGER.error(g)
@@ -109,7 +109,7 @@ def getHerokuDetails(h_api_key, h_app_name):
 
 
 
-IMAGE_X = "https://te.legra.ph/file/c177b03384d21af4e8e64.jpg"
+IMAGE_X = "https://telegra.ph/file/c63c3bcf7512f14750c9e.jpg"
 
 now=datetime.now(pytz.timezone(f'{TIMEZONE}'))
 
@@ -197,11 +197,11 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     if EMOJI_THEME is True:
-        buttons.buildbutton("😎 Master", "https://t.me/Mahith1211")
-        buttons.buildbutton("🔥 Group", "https://t.me/ASIMIRROR")
+        buttons.buildbutton("😎 Master", "https://t.me/TE_Mohanish")
+        buttons.buildbutton("🔥 Group", "https://t.me/TEIMirrorandLeechGroup")
     else:
-        buttons.buildbutton("Master", "https://t.me/Mahith1211")
-        buttons.buildbutton("Group", "https://t.me/ASIMIRROR")
+        buttons.buildbutton("Master", "https://t.me/TE_Mohanish")
+        buttons.buildbutton("Group", "https://t.me/TEIMirrorandLeechGroup")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -354,11 +354,11 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.SpeedCommand}</b>: Speedtest of Heroku server
 <br><br>
-• <b>/ASI</b>: Okatu helper
+• <b>/TEI</b>: Okatu helper
 '''
 
 help_user = telegraph.create_page(
-    title='ASI Help',
+    title='TEI Help',
     content=help_string_telegraph_user)["path"]
 
 help_string_telegraph_admin = f'''
