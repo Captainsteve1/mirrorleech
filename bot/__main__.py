@@ -59,11 +59,11 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     if EMOJI_THEME is True:
-        buttons.buildbutton("😎 Master", "https://t.me/TE_Mohanish")
-        buttons.buildbutton("🔥 Group", "https://t.me/TEIMirrorandLeechGroup")
+        buttons.buildbutton("😎 Master", "https://t.me/Tony9848")
+        buttons.buildbutton("🔥 Group", "https://t.me/tmirrorleech")
     else:
-        buttons.buildbutton("Master", "https://t.me/TE_Mohanish")
-        buttons.buildbutton("Group", "https://t.me/TEIMirrorandLeechGroup")
+        buttons.buildbutton("Master", "https://t.me/Tony9848")
+        buttons.buildbutton("Group", "https://t.me/tmirrorleech")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -107,7 +107,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://github.com/codewithweeb/mirror-with-weeb'>WeebZone</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
+<b><a href='https://github.com/codewithweeb/mirror-with-weeb'>T Mirror leech</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
 Choose a help category:
 '''
 
@@ -184,7 +184,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.SpeedCommand}</b>: Speedtest of Heroku server
 <br><br>
-• <b>/TEI</b>: Okatu helper
+• <b>/T Mirror Leech</b>: Okatu helper
 '''
 
 help_user = telegraph.create_page(
