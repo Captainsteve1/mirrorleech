@@ -444,7 +444,7 @@ def bot_sys_stats():
                 num_split += 1
     stats = f"Bot Statistics"
     stats += f"""
-Made with ❤️ by Mohanish
+Made with by @TCI
 Sent : {sent} | Recv : {recv}
 CPU : {cpu}% | RAM : {mem}%
 
