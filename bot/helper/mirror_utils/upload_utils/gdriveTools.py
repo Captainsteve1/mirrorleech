@@ -26,13 +26,6 @@ from bot.helper.ext_utils.bot_utils import get_readable_file_size, setInterval
 from bot.helper.ext_utils.fs_utils import get_mime_type
 from bot.helper.ext_utils.shortenurl import short_url
 
-LOGGER = getLogger(__name__)
-getLogger('googleapiclient.discovery').setLevel(ERROR)
-
-if USE_SERVICE_ACCOUNTS:
-    SERVICE_ACCOUNT_INDEX = randrange(len(listdir("accounts")))
-
-
 class GoogleDriveHelper:
 
     def __init__(self, name=None, path=None, size=0, listener=None):
