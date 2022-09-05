@@ -188,7 +188,7 @@ help_string_telegraph_user = f'''
 '''
 
 help_user = telegraph.create_page(
-    title='TEI Help',
+    title='T ML help',
     content=help_string_telegraph_user)["path"]
 
 help_string_telegraph_admin = f'''
@@ -212,7 +212,7 @@ help_string_telegraph_admin = f'''
 '''
 
 help_admin = telegraph.create_page(
-    title='WeebZone Help',
+    title='T mirror leech Help',
     content=help_string_telegraph_admin)["path"]
 
 def bot_help(update, context):
